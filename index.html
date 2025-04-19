@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <div class="outdiv">
+        <h1>Basic calculator</h1>
+        <label for="num1">Enter First Number</label>
+        <input type="number" id="num1">
+
+        <label for="num2">Enter Second Number </label>
+        <input type="number" id="num2">
+
+        <p>Enter The Operator</p>
+        
+        <div class="grid-div">
+            <button onclick="Calculate('+')" class="btn">
+                +
+            </button>
+            <button onclick="Calculate('-')" class="btn">
+                -
+            </button>
+            <button onclick="Calculate('*')" class="btn">
+                *
+            </button>
+            <button onclick="Calculate('/')" class="btn">
+                /
+            </button>
+            <button onclick="Calculate('%')" class="btn">
+                %
+            </button>
+            <button onclick="Calculate('**')" class="btn">
+                **
+            </button>
+            <button onclick="Calculate(' ') " id="btn-c" class="btn">
+                C
+            </button>
+        </div>
+        
+    </div>
+
+    <div class="result">
+        <h2>Result</h2>
+        <p id="print" class="cmnp"></p>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
